@@ -1,0 +1,19 @@
+@font-face {
+  font-family: poppins;
+  src: url("/fonts/Poppins-Light.ttf");
+}
+@font-face {
+  font-family: titulo;
+  src: url("/fonts/Montserrat-Light.ttf");
+}
+
+h3 {
+  font-family: titulo;
+  font-size: 40px;
+  margin: 0%;
+}
+
+* {
+  font-family: poppins;
+  font-size: 16px;
+}

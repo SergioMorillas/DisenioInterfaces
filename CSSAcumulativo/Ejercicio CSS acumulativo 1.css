@@ -1,0 +1,163 @@
+ul,
+ul li {
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+
+h1,
+h2,
+h3,
+p,
+form {
+    margin: 0;
+    padding: 0
+}
+
+.clear {
+    clear: both
+}
+
+img {
+    border: none
+}
+
+
+#contenedor {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto
+}
+
+#secundario h2 {
+    background-color: #DB905C;
+    padding: .2em;
+}
+*{
+    box-sizing: border-box;
+}
+
+#menu {
+    border-bottom: 1px solid #004C99;
+    background-image: image-set("./fondo_menu.gif");
+    background-repeat: repeat-x;
+}
+#noticias {
+    border: 1px solid #C5C5C5;
+}
+#publicidad {
+    border: 1px dashed #CC6600;
+    background-color: #FFF6CD;
+}
+#secundario{
+    border-left: 1px solid #CC6600;
+    border-right: 1px solid #CC6600;
+}
+
+/* #cabecera,
+#menu,
+#lateral,
+#contenido,
+#contenido #principal,
+#contenido #secundario,
+#pie {
+    border: 2px solid #777
+} */
+
+#cabecera {
+    clear: both;
+    padding: 1em
+}
+#cabecera h1{
+    background-image: image-set("./logo.gif") ;
+    background-size: 40%;
+    background-position: center;
+}
+#cabecera h1 span{
+    visibility: hidden;
+}
+
+#menu {
+    padding: 0.5em;
+    margin-bottom: 0.5em;
+    clear: both
+}
+
+#noticias,
+#publicidad,
+#principal,
+#secundario
+{
+    padding: 0.5em;
+}
+
+#pie{
+    padding: 0.5em 0;
+    border-top: 1px solid #C5C5C5;
+    border-bottom: 1px solid #C5C5C5;
+}
+
+.articulo{ 
+    padding: 1em 0em;
+}
+.articulo img {
+    margin: 1em;
+}
+#lateral {
+    float: left;
+    width: 20%
+}
+
+#publicidad,
+#pie{
+    margin-top: 1em;
+}
+#noticias,
+#pie{
+    background-color: #F8F8F8;
+}
+#contenido {
+    float: right;
+    width: 78%
+}
+
+#contenido #principal {
+    float: left;
+    width: 78%
+}
+
+#contenido #secundario {
+    float: right;
+    width: 20%
+}
+
+#pie {
+    clear: both
+}
+
+#cabecera #logo {
+    float: left
+}
+
+#cabecera #buscador {
+    float: right
+}
+
+#menu ul#menu_principal li {
+    display: inline;
+    float: left
+}
+
+#contenido #principal .articulo img {
+    width: 100px;
+    float: left
+}
+
+#pie .enlaces {
+    float: left
+}
+
+#pie .copyright {
+    float: right
+}
+

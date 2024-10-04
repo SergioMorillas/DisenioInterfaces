@@ -1,0 +1,94 @@
+a { 
+    color: red;
+}   
+a:hover {
+    background-color: yellow;
+}   
+a:visited {
+    color: #ab2a3e;
+}   
+div {
+    background-color: bisque;
+    border: 1px solid black;
+    width: 100px;
+    height:100px;
+}   
+.transition-ease {
+    -o-transition: all 3s ease;
+    -moz-transition: all 3s ease;
+    -webkit-transition: all 3s ease;
+    -ms-transition: all 3s ease;
+    transition: all 3s ease;
+}   
+.transition-linear {
+    -o-transition: all 3s linear;
+    -moz-transition: all 3s linear;
+    -webkit-transition: all 3s linear;
+    -ms-transition: all 3s linear;
+    transition: all 3s linear;
+}
+.transition-in {
+    -o-transition: all 3s ease-in;
+    -moz-transition: all 3s ease-in;
+    -webkit-transition: all 3s ease-in;
+    -ms-transition: all 3s ease-in;
+    transition: all 3s ease-in;
+}
+.transition-out {
+    -o-transition: all 3s ease-out;
+    -moz-transition: all 3s ease-out;
+    -webkit-transition: all 3s ease-out;
+    -ms-transition: all 3s ease-out;
+    transition: all 3s ease-out;
+}
+.transition-in-out {
+    -o-transition: all 3s ease-in-out;
+    -moz-transition: all 3s ease-in-out;
+    -webkit-transition: all 3s ease-in-out;
+    -ms-transition: all 3s ease-in-out;
+    transition: all 3s ease-in-out;
+}
+div:hover {
+    background-color: aqua;
+    width: 150px;
+    height:150px;
+}
+
+*{
+    margin: 0px;
+    border: 0px;
+    box-sizing: border-box;
+}
+ul{
+    text-decoration:none;
+    width: 100%;
+    padding: 10px 10px 10px 0px;
+}
+nav{
+    max-width: 300px;
+    width: 100%;
+    background-color: gray;
+}
+.item{
+    display: block;
+}
+.item:hover{
+    background-color: rgb(236, 236, 236);
+}
+.subitem{
+    display: block;
+    background-color: rgb(54, 54, 54);
+}
+.subitem:hover{
+    background-color: rgb(92, 72, 72);
+}
+.sublista{
+    display:none;
+    transition: all 1s ease;
+}
+.lista li:hover .submenu{
+    display :block;
+}
+li:hover ul{
+    display:block
+}     

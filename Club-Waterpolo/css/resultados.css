@@ -1,0 +1,26 @@
+img.logoEquipo{
+    width:50px;
+}
+p.partido{
+    display: inline-block;
+}
+img.logoEquipoSergio{
+    width: 50px;
+}
+h1{
+    text-align: center;
+}
+article{
+    border: 1px solid black;
+    width:100%;
+    align-items: center;
+    margin:10px;
+    background-color: #f2f2f2;   
+    margin-left:100%;
+    text-align: center;
+}
+section.resultados{
+    display:inline-block;
+    justify-content: center;
+    align-content: center;
+}

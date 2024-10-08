@@ -1,0 +1,17 @@
+div.divJugador, 
+div.divEquipoDirectivo{
+    border: 1px solid black;
+    width:50%;
+    align-items: center;
+    margin:10px;
+    background-color: #f2f2f2;   
+    text-align: center;
+    display:inline-block;
+
+}
+
+section{
+    display:inline-block;
+    text-align: center;
+
+}

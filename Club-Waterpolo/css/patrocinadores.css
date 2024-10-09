@@ -1,0 +1,15 @@
+section{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 33% 33% 33%;
+}
+figure img{
+    grid-column: auto;
+    width:50%;
+}
+figure{
+    text-align: center;
+}
+figure:hover{
+    background-color: #f2f2f2;
+}

@@ -1,0 +1,31 @@
+.table tbody tr td:nth-child(3)::after {
+    content: "€";
+}
+
+tbody tr:hover{
+    background-color: bisque;
+}
+
+td:nth-child(1) {
+    background-color: lightblue;
+} 
+
+
+table{
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th{
+    background-color: #009688;
+}
+
+th, td {
+    border: 1px solid #ddd;    
+    padding : 10px 60px;
+
+}
+
+tbody tr:nth-child(odd) {
+    background-color: lightyellow;
+} 

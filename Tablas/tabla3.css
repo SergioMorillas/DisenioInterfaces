@@ -1,0 +1,5 @@
+.table tbody tr:nth-child(odd) {
+}
+.table tbody tr td:nth-child(3)::after {
+}
+

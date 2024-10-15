@@ -1,0 +1,15 @@
+div{
+    border: 1px solid black;
+}
+.imagen{
+    display: inline-flex;
+    width: 49%;
+}
+.lateral{
+    display: inline-flex;
+    width: 49%;
+}
+.banner{
+    display: block;
+    width: 100%;
+}

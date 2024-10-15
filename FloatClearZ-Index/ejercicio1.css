@@ -1,0 +1,59 @@
+div{
+    margin: 10px;
+    width: 150px;
+    height: 200px;
+}
+.a {
+    float: left;
+
+    background-color: aqua;
+}
+.b {
+    float: right;
+    background-color: rgb(156, 41, 176);
+}
+.c {
+    float: right;
+    background-color: rgb(255, 242, 0);
+}
+.d {
+    float: none;
+    clear: both;
+    background-color: rgba(72, 92, 100, 0.244);
+}
+.e {
+    float: left;
+    background-color: rgb(113, 222, 54);
+}
+.f {
+    float: right;
+    background-color: rgba(255, 238, 0, 0.512);
+}
+p{
+    margin: 10px;
+    height: fit-content;
+    width:fit-content;
+    border: 10px dotted brown;
+    background-color: rgba(0, 255, 4, 0.512);
+    clear: both;
+}
+
+.g{
+    background-color: antiquewhite;
+    position: relative;
+    z-index:3;
+}
+.h{
+    background-color: coral;
+    position: relative;
+    z-index:1;
+    left:50px;
+    top:-110px;
+}
+.i{
+    background-color: color-mix(in srgb, rgb(32, 166, 168) 50%, rgb(231, 49, 231) 50%);
+    position: relative;
+    z-index:2;
+    left:100px;
+    top:-210px;
+}

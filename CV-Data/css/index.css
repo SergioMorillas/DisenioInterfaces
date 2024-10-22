@@ -1,0 +1,17 @@
+@font-face {
+    font-family: cuerpo;
+    src: url("CV-Data/fonts/Poppins-Light.ttf");
+}
+@font-face {
+    font-family: titulo;
+    src: url("CV-Data/fonts/Montserrat-Light.ttf");
+}
+*{
+    font-family: cuerpo, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1,h2,h3,h4{
+    font-family: titulo, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+div{
+    border: 1px solid black;
+}

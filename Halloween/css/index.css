@@ -1,0 +1,149 @@
+@font-face {
+    font-family: huesos;
+    src: url("../fonts/GnarlySpine_PERSONAL_USE_ONLY.otf");
+}
+@font-face {
+    font-family: cuerpo;
+    src: url("../fonts/Poppins-Light.ttf");
+}
+h1{
+    background-image: url("../images/hand.png");
+    background-size:cover;
+    padding: 80px;
+}
+h1,
+h2,
+h3,
+h4 {
+    font-family: huesos, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+}
+p::first-letter {
+    font-family: huesos, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: xx-large;
+}
+
+p{
+    font-family: cuerpo, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+/**********=======Menú y submenú=======**********/
+/**********=======Menú y submenú=======**********/
+/**********=======Menú y submenú=======**********/
+.menu {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    margin: 0 auto;
+}
+
+ol {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0.5em 0;
+    list-style: none;
+}
+
+.menu-item {
+    background: rgb(10, 10, 10);
+    padding: 1em 0.5em;
+    position: relative;
+    border-bottom: 5px solid #303030;
+    margin: 1em 0.25em;
+    cursor: pointer;
+    min-width: 8em;
+    text-align: center;
+}
+
+.menu-item:hover,
+.menu-item:focus-within {
+    border-bottom-color: #101010;
+    background: #ff0000;
+}
+
+.menu-item:hover .sub-menu,
+.menu-item:hover .sub-menu:hover,
+.menu-item:focus-within .sub-menu,
+.menu-item:focus-within .sub-menu:hover {
+    visibility: visible;
+    opacity: 1;
+    display: flex;
+}
+
+.sub-menu {
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    left: 0;
+    margin-top: 1em;
+    visibility: hidden;
+    display: none;
+    opacity: 0;
+}
+
+.sub-menu .menu-item {
+    margin: 0.1em 0;
+    padding: 1em;
+    width: 10em;
+    text-align: center;
+    z-index: 2;
+}
+
+nav ol li a {
+    color: #dbd1a2;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav ol li a:focus {
+    outline: none;
+}
+
+html,
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navigation {
+    width: 300px;
+}
+
+.mainmenu,
+.submenu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mainmenu {
+    margin: 50px 0 0 20px;
+}
+
+.mainmenu a {
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.mainmenu a:hover {
+    background-color: #457b9d;
+}
+
+
+.mainmenu li:hover .submenu {
+    display: block;
+    max-height: 200px;
+}
+.submenu {
+    overflow: hidden;
+    max-height: 0;
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+}

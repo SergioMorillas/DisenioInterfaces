@@ -1,8 +1,5 @@
-function mostrar(id){
-    const apartados = document.querySelectorAll('div[id^="apartado"]');
-    apartados.forEach(apartado => {
-        apartado.style.display = "none";
-    });
-    const apartadoSeleccionado = document.getElementById("apartado"+id);
-    apartadoSeleccionado.style.display = "block";
+
+let confirmacion = confirm("Esta página posee contenido solo apto para adultos, por favor confirma que eres mayor de 18 años")
+if (confirmacion) {
+    
 }

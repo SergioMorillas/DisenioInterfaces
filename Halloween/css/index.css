@@ -31,6 +31,7 @@ h2,
 h3,
 h4 {
     font-family: huesos, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    clear: both;
 }
 p::first-letter {
     font-family: huesos, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -56,9 +57,22 @@ figure img.galeria{
 figure{
     text-align: center;
 }
-
 input,select,textarea{
+    box-sizing: border-box;
     display: block;
+    cursor:pointer;
+    transition:  1s linear;
+    width: 50%;
+    border-radius: 20px;
+    padding: 10px;    
+    font-size: 12px;
+    border: 10px double red;
+}
+
+input:focus,select:focus,textarea:focus{
+    border: 10px solid black;
+    display: block;
+    background-color: rgb(245, 190, 190);
 }
 .required::after{
     content:"*";
@@ -78,8 +92,34 @@ textarea{
     resize: none
 }
 .logo_kick{
-    width: 10%;
+    width: 50%;
 }
+.apartado1{
+    display: flex;
+}
+.texto {
+    width: 49%;
+    float:left;
+}
+.ubicacion {
+    width: 49%;
+    float:right;
+}
+.apartado2{
+    display: flex;
+}
+.precios {
+    width: 49%;
+    float:left;
+
+}
+.infoadicional {
+    width: 49%;
+    float:right;
+}
+
+
+
 /**********=======Menú y submenú=======**********/
 /**********=======Menú y submenú=======**********/
 /**********=======Menú y submenú=======**********/

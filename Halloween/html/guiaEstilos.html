@@ -1,11 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Guia de estilos</title>
+        <link rel="stylesheet" href="../css/guiaEstilos.css" />
+    </head>
+    <body>
+        <div class="fuente">
+            <h1>Fuentes</h1>
+            <h2>Fuentes de titulo</h2>
+            <h1 id="h1">Texto con HI</h1>
+            <h2 id="h2">Texto con HII</h2>
+            <h3 id="h3">Texto con HIII</h3>
+            <h2>Fuentes de cuerpo</h2>
+            <p id="primera_letra">Esto es un texto con el formato del cuerpo</p>
+        </div>
+        <div class="botones">
+            <h1>Botones</h1>
+            <h2>Boton de aceptar</h2>
+            <button
+                class="formBtn aceptar"
+                type="submit"
+                onclick="alert('Formulario enviado, recibiras el comprobante en el correo')">
+                Aceptar
+            </button>
+            <h2>Boton de aceptar con hover</h2>
+            <button
+                class="formBtn aceptarhover"
+                type="submit"
+                onclick="alert('Formulario enviado, recibiras el comprobante en el correo')">
+                Aceptar
+            </button>
+            <h2>Boton de cancelar</h2>
+            <button class="formBtn cancelar" type="reset">Cancelar</button>
+            <h2>Boton de cancelar con hover</h2>
+            <button class="formBtn cancelarhover" type="reset">Cancelar</button>
+        </div>
+        <div class="paletaColor">
+            <h1>Paleta de color</h1>
+            <div class="colordiv" id="colorc4bbbb">Background de la página</div>
+            <div class="colordiv" id="color101010">Nav y borders</div>
+            <div class="colordiv" id="colorf0f0f0">Texto y fondos de tarjetas </div>
+            <div class="colordiv" id="colorcd7070">Borde tarjeta peliculas </div>
+            <div class="colordiv" id="colordfd4d4">Fondo del formulario </div>
+            <div class="colordiv" id="color2d562d">Boton aceptar sin hover</div>
+            <div class="colordiv" id="color912828">Boton cancelar sin hover </div>
+            <div class="colordiv" id="color32b732">Boton aceptar con hover </div>
+            <div class="colordiv" id="colorf03131">Boton cancelar con hover </div>
+            <div class="colordiv" id="colord4ff00">Fondo del footer </div>
+            <div class="colordiv" id="colorffa4f9">Texto del footer </div>
+            <div class="colordiv" id="colordbd1a2">Color del texto del nav </div>
+        </div>
+        <div class="formularios">
+            <h1>Formularios</h1>
+            <select name="pais" id="pais">
+                <option value="AF">Afganistán</option>
+                <option value="AL">Albania</option>
+                <option value="DE">Alemania</option>
+                <option value="AD">Andorra</option>
+                <option value="AO">Angola</option>
+            </select>
+            <input name="edad" id="edad" type="date" required />
+
+            <textarea
+                name="adicional"
+                id="adicional"
+                cols="30"
+                rows="5"
+            ></textarea>
+        </div>
+    </body>
 </html>

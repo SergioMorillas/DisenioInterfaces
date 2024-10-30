@@ -46,7 +46,7 @@ h3 {
 
 .precios p {
     border: 3px solid #101010;
-    padding: 50px;
+    padding: 62px;
     height: 100%;
     border-radius: 4px;
     background-color: #f0f0f0;
@@ -55,7 +55,7 @@ h3 {
 .texto p,
 .infoadicional ul {
     border: 3px solid #101010;
-    padding: 41px 50px;
+    padding: 20px 50px;
     height: 100%;
     border-radius: 4px;
     background-color: #f0f0f0;
@@ -113,11 +113,17 @@ figure img.galeria {
     width: 100%;
     text-align: center;
     align-items: center;
+    
+}
+#apartado4{
+    filter: brightness(0);
+
 }
 figure {
     font-size: x-large;
     font-family: huesos, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
+
 }
 input,
 select,

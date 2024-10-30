@@ -10,7 +10,15 @@
     font-family: tipografia_footer;
     src: url("../fonts/Ldfcomicsans-jj7l.ttf");
 }
-
+* {
+    margin: 0;
+    padding: 0;
+    /* cursor: url(../images/hueso.jpg),auto; */
+}
+main {
+    margin: 20px;
+    padding: 10px;
+}
 body {
     background-color: #c4bbbb;
     font-family: cuerpo, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -21,52 +29,55 @@ h1 {
     padding: 80px;
     text-align: center;
 }
+
 h2 {
-    border-bottom:4px solid #101010;
+    border-bottom: 4px solid #101010;
     color: red;
     text-align: center;
+    margin: 10px 0;
 }
 h3 {
-    border-bottom:2px solid red;
     color: black;
     text-align: center;
+    width: 85%;
+    margin-left: 7.5%;
+    margin-top: 20px;
 }
+
 .precios p {
     border: 3px solid black;
     padding: 50px;
     height: 100%;
-    border-radius:4px;
+    border-radius: 4px;
     background-color: #f0f0f0;
-
+    box-shadow: -0.54em 0 0.6em rgb(195, 52, 23);
 }
-.texto p,.infoadicional ul {
+.texto p,
+.infoadicional ul {
     border: 3px solid black;
-    padding: 50px;
+    padding: 41px 50px;
     height: 100%;
-    border-radius:4px;
+    border-radius: 4px;
     background-color: #f0f0f0;
     list-style-image: url("../images/logos/lista.png");
-
+    box-shadow: -0.54em 0 0.6em rgb(195, 52, 23);
 }
-.pelicula{
+.pelicula {
     display: flex;
+    justify-content: space-evenly;
+    background-color: #f0f0f0;
+    border: 2px solid rgb(205, 112, 112);
+    box-shadow: -0.54em 0 0.6em black;
+    width: 85%;
+    margin-left: 7.5%;
 }
-.pelicula >h4{
-    display:block;
-    clear: both;
+
+.pelicula > img {
+    float: left;
+    width: 18%;
 }
-.pelicula >h3{
-    display:block;
-    clear: both;
-}
-.pelicula >img{
-    text-align: left;
-    align-items: left;
-    width: 49%;
-}
-.pelicula >p{
-    text-align: right;
-    align-items: right;
+.pelicula > p {
+    float: right;
     width: 49%;
 }
 h1,
@@ -82,24 +93,30 @@ p::first-letter {
 }
 
 p {
+    padding: 10px 20px;
     font-family: cuerpo, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
-hr {
-    color: #ff0000;
 }
 
 #apartado4 {
     display: grid;
     grid-template-columns: 33% 33% 33%;
     grid-template-rows: 33% 33% 33%;
-    filter:brightness(0);
+    width: 75%;
+    align-content: center;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-left: 12.5%;
 }
 figure img.galeria {
     grid-column: auto;
     width: 100%;
+    text-align: center;
+    align-items: center;
 }
 figure {
-    box-shadow: -0.2em 0 .4em black;
+    font-size: x-large;
+    font-family: huesos, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
 }
 input,
@@ -110,18 +127,18 @@ textarea {
     cursor: pointer;
     transition: 1s linear;
     width: 50%;
-    border-radius:4px;
+    border-radius: 4px;
     padding: 10px;
     font-size: 12px;
-    border: 10px double red;
+    border: 2px double black;
 }
 
 input:focus,
 select:focus,
 textarea:focus {
-    border: 10px solid black;
+    border: 4px solid black;
     display: block;
-    background-color: rgb(245, 190, 190);
+    background-color: rgb(223, 212, 212);
 }
 .required::after {
     content: "*";
@@ -133,14 +150,21 @@ textarea:focus {
     padding: 10px;
     width: fit-content;
     height: fit-content;
-    border-radius:4px;
-
+    border-radius: 4px;
 }
 button.aceptar {
-    background-color: green;
+    background-color: rgb(45, 86, 45);
 }
 button.cancelar {
-    background-color: red;
+    background-color: rgb(145, 40, 40);
+}
+button.aceptar:hover {
+    background-color: rgb(50, 183, 50);
+    cursor: pointer;
+}
+button.cancelar:hover {
+    background-color: rgb(240, 49, 49);
+    cursor: pointer;
 }
 textarea {
     resize: none;
@@ -175,27 +199,30 @@ footer {
     box-sizing: border-box;
     display: grid;
     grid-template-columns: 50% 50%;
-    background-color: greenyellow;
+    background-color: rgb(212, 255, 0);
     padding: 0;
     margin: 0;
-    font-size: larger;
+    font-size: x-large;
 }
 .enlace {
-    font-family: tipografia_footer, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-family: tipografia_footer, "Segoe UI", Tahoma, Geneva, Verdana,
+        sans-serif;
     color: rgb(255, 164, 249);
     text-align: start;
 }
 .nombreApellidos {
-    font-family: tipografia_footer, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-family: tipografia_footer, "Segoe UI", Tahoma, Geneva, Verdana,
+        sans-serif;
     color: rgb(255, 164, 249);
     text-align: end;
-
 }
 .nombreApellidos::first-letter {
-    font-family: tipografia_footer, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-family: tipografia_footer, "Segoe UI", Tahoma, Geneva, Verdana,
+        sans-serif;
 }
 .enlace::first-letter {
-    font-family: tipografia_footer, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-family: tipografia_footer, "Segoe UI", Tahoma, Geneva, Verdana,
+        sans-serif;
 }
 /**********=======Menú y submenú=======**********/
 /**********=======Menú y submenú=======**********/
@@ -206,11 +233,11 @@ footer {
     width: 100%;
     margin: 0;
 }
-nav{
+nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color:  rgb(10, 10, 10);
+    background-color: rgb(10, 10, 10);
     width: 100%;
 }
 ol {
@@ -219,9 +246,10 @@ ol {
     align-items: center;
     justify-content: center;
     width: 100%;
-    list-style-image: url("../images/logos/lista.png");
+    list-style: none;
+    /* list-style-image: url("../images/logos/lista.png"); */
     padding: 0;
-    margin:0;
+    margin: 0 1em;
 }
 
 .menu-item {

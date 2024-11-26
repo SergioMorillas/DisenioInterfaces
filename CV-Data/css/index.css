@@ -12,9 +12,7 @@
 h1,h2,h3,h4{
     font-family: titulo, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-div{
-    border: 1px solid black;
-}
+
 /* General Styles */
 :root {
     --gris: rgb(51, 51, 51);
@@ -54,6 +52,7 @@ header .presentacion .nombre {
     padding-left: 100px;
     margin-bottom: 0px; 
     color: var(--blanco);
+    text-shadow: 3px 3px 4px rgb(212, 212, 149);
 }
 
 header .presentacion .apellido {
@@ -152,11 +151,21 @@ aside .tituloAside {
     margin: 0 -20px;
     text-align: center;
 }
-
+aside .perfil {
+    margin-top: 49px;
+}
+aside{
+    text-align: justify;
+}
+aside .aptitudes{ 
+    margin-top: 24px;
+}
 aside .contacto p, aside .perfil p, aside .aptitudes ul {
     margin: 10px 0;
 }
-
+aside .contacto p{
+    margin: 37px 30px 30px 30px;
+}
 aside .contacto a {
     color: var(--blanco);
     text-decoration: none;

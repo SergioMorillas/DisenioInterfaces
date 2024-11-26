@@ -1,255 +1,307 @@
+/* Definición de fuentes personalizadas */
 @font-face {
-    font-family: cuerpo;
-    src: url("CV-Data/fonts/Poppins-Light.ttf");
-}
-@font-face {
-    font-family: titulo;
-    src: url("CV-Data/fonts/Montserrat-Light.ttf");
-}
-*{
-    font-family: cuerpo, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-h1,h2,h3,h4{
-    font-family: titulo, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: cuerpo;
+  src: url("CV-Data/fonts/Poppins-Light.ttf");
 }
 
-/* General Styles */
+@font-face {
+  font-family: titulo;
+  src: url("CV-Data/fonts/Montserrat-Light.ttf");
+}
+
+/* Aplicación de fuentes por defecto para todo el documento */
+* {
+  font-family: cuerpo, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1, h2, h3, h4 {
+  font-family: titulo, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Definición de colores y variables globales */
 :root {
-    --gris: rgb(51, 51, 51);
-    --gris-medio: rgb(151, 147, 147);
-    --gris-claro: rgb(193, 193, 193);
-    --azul: rgb(32, 226, 255);
-    --azul-oscuro: rgb(40, 113, 247);
-    --negro: rgb(0,0,0);
-    --blanco: rgb(255,255,255);
+  --gris: rgb(51, 51, 51);
+  --gris-medio: rgb(151, 147, 147);
+  --gris-claro: rgb(193, 193, 193);
+  --azul: rgb(32, 226, 255);
+  --azul-oscuro: rgb(40, 113, 247);
+  --negro: rgb(0, 0, 0);
+  --blanco: rgb(255, 255, 255);
 }
 
+/* Estilos generales del cuerpo */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: var(--negro);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--negro);
 }
 
+/* Estilos para el encabezado */
 header {
-    max-width: 90%;
-    margin-left: 5%;
-    margin-right: 5%;
-    display: flex;
+  max-width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  display: flex;
 }
 
 header .presentacion {
-    width: 72%;
-    background-color: var(--gris);
-    color: var(--blanco);
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start; 
-    font-size: 60px;
+  width: 72%;
+  background-color: var(--gris);
+  color: var(--blanco);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 60px;
 }
 
 header .presentacion .nombre {
-    padding-left: 100px;
-    margin-bottom: 0px; 
-    color: var(--blanco);
-    text-shadow: 3px 3px 4px rgb(212, 212, 149);
+  padding-left: 100px;
+  margin-bottom: 0px;
+  color: var(--blanco);
+  text-shadow: 3px 3px 4px rgb(212, 212, 149);
 }
 
 header .presentacion .apellido {
-    padding-left: 100px;
-    margin-top: 0; 
-    color: var(--gris-medio);
+  padding-left: 100px;
+  margin-top: 0;
+  color: var(--gris-medio);
 }
 
 header .titulos {
-    width: 30%;
-    background-color: var(--azul);
-    color: var(--blanco);
-    text-align: right;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  width: 30%;
+  background-color: var(--azul);
+  color: var(--blanco);
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 header .titulos p {
-    margin-left: 30px;
-    margin-right: 30px;
-    text-align: left;
-    font-size: large;
+  margin-left: 30px;
+  margin-right: 30px;
+  text-align: left;
+  font-size: large;
 }
 
-header .titulos p:nth-child(odd){
-    color: var(--blanco);
-    border-bottom: 1px solid var(--negro);
+header .titulos p:nth-child(odd) {
+  color: var(--blanco);
+  border-bottom: 1px solid var(--negro);
 }
 
 header .titulos p:nth-child(even) {
-    color: var(--negro);
-    border-bottom: 1px solid var(--blanco);
+  color: var(--negro);
+  border-bottom: 1px solid var(--blanco);
 }
 
+/* Estilos del contenedor principal */
 .container {
-    display: flex;
-    justify-content: space-between;
-    margin: 20px auto;
-    max-width: 90%;
-    padding-top: 0;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px auto;
+  max-width: 90%;
+  padding-top: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 main {
-    width: 70%;
-    padding: 20px;
-    padding-top: 0;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-bottom: 0;
-    background-color: var(--blanco);
+  width: 70%;
+  padding: 20px;
+  padding-top: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  background-color: var(--blanco);
 }
 
 main .tituloMain {
-    background-color: var(--azul);
-    color: var(--blanco);
-    padding: 10px;
-    margin: 0 -20px;
-    text-align: center;
-    margin-bottom: 30px;
+  background-color: var(--azul);
+  color: var(--blanco);
+  padding: 10px;
+  margin: 0 -20px;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
-main .bloqueEstudios, main .bloqueExperiencia {
-    padding: 10px;
-    margin-bottom: 30px;
-    border-left: 5px solid var(--azul);
-    border-radius: 10px;
+main .bloqueEstudios,
+main .bloqueExperiencia {
+  padding: 10px;
+  margin-bottom: 30px;
+  border-left: 5px solid var(--azul);
+  border-radius: 10px;
 }
 
-main .bloqueEstudios h3, main .bloqueExperiencia h3 {
-    margin: 0;
-    color: var(--gris);
+main .bloqueEstudios h3,
+main .bloqueExperiencia h3 {
+  margin: 0;
+  color: var(--gris);
 }
 
-main .bloqueEstudios p, main .bloqueExperiencia p {
-    margin: 5px 0;
+main .bloqueEstudios p,
+main .bloqueExperiencia p {
+  margin: 5px 0;
 }
 
 aside {
-    width: 28%;
-    background-color: var(--gris-claro);
-    color: var(--blanco);
-    padding: 20px;
-    float: right;
-    padding-top: 0;
-    margin-top: 0;
+  width: 28%;
+  background-color: var(--gris-claro);
+  color: var(--blanco);
+  padding: 20px;
+  float: right;
+  padding-top: 0;
+  margin-top: 0;
 }
 
 aside .tituloAside {
-    background-color: var(--gris);
-    color: var(--blanco);
-    padding: 10px;
-    margin: 0 -20px;
-    text-align: center;
+  background-color: var(--gris);
+  color: var(--blanco);
+  padding: 10px;
+  margin: 0 -20px;
+  text-align: center;
 }
+
 aside .perfil {
-    margin-top: 49px;
+  margin-top: 49px;
 }
-aside{
-    text-align: justify;
+
+aside {
+  text-align: justify;
 }
-aside .aptitudes{ 
-    margin-top: 24px;
+
+aside .aptitudes {
+  margin-top: 24px;
 }
-aside .contacto p, aside .perfil p, aside .aptitudes ul {
-    margin: 10px 0;
+
+aside .contacto p,
+aside .perfil p,
+aside .aptitudes ul {
+  margin: 10px 0;
 }
-aside .contacto p{
-    margin: 37px 30px 30px 30px;
+
+aside .contacto p {
+  margin: 37px 30px 30px 30px;
 }
+
 aside .contacto a {
-    color: var(--blanco);
-    text-decoration: none;
+  color: var(--blanco);
+  text-decoration: none;
 }
-aside .contacto a:hover, aside .contacto a:focus {
-    color: var(--azul);
+
+aside .contacto a:hover,
+aside .contacto a:focus {
+  color: var(--azul);
 }
-aside .contacto a:visited, aside .contacto a:visited {
-    color: var(--azul-oscuro);
+
+aside .contacto a:visited,
+aside .contacto a:visited {
+  color: var(--azul-oscuro);
 }
+
 aside .contacto img {
-    width: 20px;
-    vertical-align: middle;
-    margin-right: 10px;
+  width: 20px;
+  vertical-align: middle;
+  margin-right: 10px;
 }
 
 aside .aptitudes ul {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
 
 aside .aptitudes ul li {
-    border-left: 4px solid var(--azul);
-    border-right: 4px solid var(--azul);
-    color: var(--blanco);
-    padding: 5px;
-    margin: 10px 0;
+  border-left: 4px solid var(--azul);
+  border-right: 4px solid var(--azul);
+  color: var(--blanco);
+  padding: 5px;
+  margin: 10px 0;
 }
 
-footer {
-    max-width: 90%;
-    margin-left: 5%;
-    margin-right: 5%;
-    display: flex;
-    max-width: 90%;
-    margin-left: 5%;
-    margin-right: 5%;
-    padding: 0;
+/* Estilos para la sección 'abajo' */
+div#abajo {
+  max-width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  display: flex;
+  padding: 0;
 }
 
-footer .tituloFooter {
-    background-color: var(--azul);
-    color: var(--blanco);
-    padding: 10px;
-    margin: 0 -20px;
-    text-align: center;
+div#abajo .tituloFooter {
+  background-color: var(--azul);
+  color: var(--blanco);
+  padding: 10px;
+  margin: 0 -20px;
+  text-align: center;
 }
 
-footer  .tituloFooterIzda {
-    background-color: var(--gris);
+div#abajo .tituloFooterIzda {
+  background-color: var(--gris);
 }
 
-footer div.entregas {
-    width: 75%;
-    background-color: var(--blanco);
-    color: var(--blanco);
-    padding: 20px;
+div#abajo div.entregas {
+  width: 75%;
+  background-color: var(--blanco);
+  color: var(--blanco);
+  padding: 20px;
 }
 
-footer div.proyectos {
-    width: 30%;
-    background-color: var(--gris-claro);
-    color: var(--blanco);
-    padding: 20px;
+/* Configuración de figuras en la sección 'entregas' */
+div#abajo div.entregas #figures {
+  display: flex;
+  gap: 10px; /* Espacio entre figuras */
 }
 
-
-
-
-
-footer ul {
-    list-style: none;
-    padding: 0;
+/* Configuración individual de cada figura */
+div#abajo div.entregas #figures figure {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: var(--gris-claro);
+  color: var(--gris);
+  padding: 5px;
+  margin: 5px 0;
 }
 
-footer .proyectos ul li {
-    background-color: var(--blanco);
-    color: var(--gris);
-    padding: 5px;
-    margin: 5px 0;
+/* Ajustes de imágenes dentro de figuras */
+div#abajo div.entregas #figures figure img {
+  width: 100%;
+  height: 200px; /* Altura fija para las imágenes */
+  object-fit: cover; /* Asegura que la imagen se recorte para cubrir el contenedor */
+  display: block;
 }
-footer .entregas ul li {
-    background-color: var(--gris-claro);
-    color: var(--gris);
-    padding: 5px;
-    margin: 5px 0;
+
+/* Estilos de los pies de foto */
+div#abajo div.entregas #figures figure figcaption {
+  margin-top: 10px; /* Espacio entre la imagen y el texto */
+  text-align: justify; /* Alinea el texto en el centro */
+  flex: 1;
+  background-color: var(--gris-claro);
+  color: var(--blanco);
+  padding: 5px;
+  margin: 5px 0;
 }
+div#abajo div.entregas #figures figure figcaption .titulo{
+  font-weight: bold;
+}
+div#abajo div.proyectos {
+  width: 30%;
+  background-color: var(--gris-claro);
+  color: var(--blanco);
+  padding: 20px;
+}
+
+div#abajo div.entregas #figures figure img {
+  margin-top: 10px;
+  transition: opacity 0.3s ease, transform 1s ease;
+  transform-origin: center center;
+}
+
+div#abajo div.entregas #figures figure img:hover {
+  transform: scale(1.05);
+  box-shadow: 4px 4px 12px var(--negro);
+}
+

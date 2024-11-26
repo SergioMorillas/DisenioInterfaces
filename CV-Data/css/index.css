@@ -15,3 +15,232 @@ h1,h2,h3,h4{
 div{
     border: 1px solid black;
 }
+/* General Styles */
+:root {
+    --gris: rgb(51, 51, 51);
+    --gris-medio: rgb(151, 147, 147);
+    --gris-claro: rgb(193, 193, 193);
+    --azul: rgb(32, 226, 255);
+    --azul-oscuro: rgb(40, 113, 247);
+    --negro: rgb(0,0,0);
+    --blanco: rgb(255,255,255);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--negro);
+}
+
+header {
+    max-width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+}
+
+header .presentacion {
+    width: 72%;
+    background-color: var(--gris);
+    color: var(--blanco);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    font-size: 60px;
+}
+
+header .presentacion .nombre {
+    padding-left: 100px;
+    margin-bottom: 0px; 
+    color: var(--blanco);
+}
+
+header .presentacion .apellido {
+    padding-left: 100px;
+    margin-top: 0; 
+    color: var(--gris-medio);
+}
+
+header .titulos {
+    width: 30%;
+    background-color: var(--azul);
+    color: var(--blanco);
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header .titulos p {
+    margin-left: 30px;
+    margin-right: 30px;
+    text-align: left;
+    font-size: large;
+}
+
+header .titulos p:nth-child(odd){
+    color: var(--blanco);
+    border-bottom: 1px solid var(--negro);
+}
+
+header .titulos p:nth-child(even) {
+    color: var(--negro);
+    border-bottom: 1px solid var(--blanco);
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto;
+    max-width: 90%;
+    padding-top: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+main {
+    width: 70%;
+    padding: 20px;
+    padding-top: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    background-color: var(--blanco);
+}
+
+main .tituloMain {
+    background-color: var(--azul);
+    color: var(--blanco);
+    padding: 10px;
+    margin: 0 -20px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+main .bloqueEstudios, main .bloqueExperiencia {
+    padding: 10px;
+    margin-bottom: 30px;
+    border-left: 5px solid var(--azul);
+    border-radius: 10px;
+}
+
+main .bloqueEstudios h3, main .bloqueExperiencia h3 {
+    margin: 0;
+    color: var(--gris);
+}
+
+main .bloqueEstudios p, main .bloqueExperiencia p {
+    margin: 5px 0;
+}
+
+aside {
+    width: 28%;
+    background-color: var(--gris-claro);
+    color: var(--blanco);
+    padding: 20px;
+    float: right;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+aside .tituloAside {
+    background-color: var(--gris);
+    color: var(--blanco);
+    padding: 10px;
+    margin: 0 -20px;
+    text-align: center;
+}
+
+aside .contacto p, aside .perfil p, aside .aptitudes ul {
+    margin: 10px 0;
+}
+
+aside .contacto a {
+    color: var(--blanco);
+    text-decoration: none;
+}
+aside .contacto a:hover, aside .contacto a:focus {
+    color: var(--azul);
+}
+aside .contacto a:visited, aside .contacto a:visited {
+    color: var(--azul-oscuro);
+}
+aside .contacto img {
+    width: 20px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+aside .aptitudes ul {
+    list-style: none;
+    padding: 0;
+}
+
+aside .aptitudes ul li {
+    border-left: 4px solid var(--azul);
+    border-right: 4px solid var(--azul);
+    color: var(--blanco);
+    padding: 5px;
+    margin: 10px 0;
+}
+
+footer {
+    max-width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    max-width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 0;
+}
+
+footer .tituloFooter {
+    background-color: var(--azul);
+    color: var(--blanco);
+    padding: 10px;
+    margin: 0 -20px;
+    text-align: center;
+}
+
+footer  .tituloFooterIzda {
+    background-color: var(--gris);
+}
+
+footer div.entregas {
+    width: 75%;
+    background-color: var(--blanco);
+    color: var(--blanco);
+    padding: 20px;
+}
+
+footer div.proyectos {
+    width: 30%;
+    background-color: var(--gris-claro);
+    color: var(--blanco);
+    padding: 20px;
+}
+
+
+
+
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer .proyectos ul li {
+    background-color: var(--blanco);
+    color: var(--gris);
+    padding: 5px;
+    margin: 5px 0;
+}
+footer .entregas ul li {
+    background-color: var(--gris-claro);
+    color: var(--gris);
+    padding: 5px;
+    margin: 5px 0;
+}

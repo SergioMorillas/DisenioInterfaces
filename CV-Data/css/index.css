@@ -12,9 +12,7 @@
 h1,h2,h3,h4{
     font-family: titulo, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-div{
-    border: 1px solid black;
-}
+
 /* General Styles */
 :root {
     --gris: rgb(51, 51, 51);

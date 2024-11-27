@@ -1,0 +1,466 @@
+WEBVTT
+Kind: captions
+Language: es
+
+00:00:27.384 --> 00:00:27.960
+[Música]
+
+00:00:27.960 --> 00:00:34.920
+voy a explicaros cómo funcionarían tres&nbsp;
+programas en visual basic.net que es
+
+00:00:34.920 --> 00:00:39.720
+un lenguaje de programación de Microsoft&nbsp;
+para ello vamos a utilizar el ide visual
+
+00:00:39.720 --> 00:00:44.100
+Studio 2022 pero la versión Community ya&nbsp;
+que es la versión gratuita de este ide ahora
+
+00:00:44.100 --> 00:00:49.620
+empezaré enseñando este donde se descarga una&nbsp;
+pequeña ejecución de un hola mundo que se crea
+
+00:00:49.620 --> 00:00:54.240
+automáticamente y luego os explicaré los tres&nbsp;
+programas que se ven a la derecha en mi pantalla
+
+00:01:00.360 --> 00:01:07.500
+voy a explicaros Cómo instalar visual Studio 2022&nbsp;
+que es el ide que voy a utilizar para programar a
+
+00:01:07.500 --> 00:01:12.960
+partir de visual basic Hay que entrar en la página&nbsp;
+web que muestro y darle al botón de descargarse
+
+00:01:12.960 --> 00:01:18.840
+una vez que salga el mensaje significa que se&nbsp;
+os está instalando el archivo punto exe y ahora
+
+00:01:18.840 --> 00:01:24.660
+abrimos el ejecutable una vez que lo abrimos no&nbsp;
+saldría esta pantalla en la cual Tendremos que
+
+00:01:24.660 --> 00:01:32.040
+seleccionar desarrollo de escritorio.net ya que&nbsp;
+es el compilador necesario para visual basic y
+
+00:01:32.040 --> 00:01:37.980
+cualquier lenguaje basado en punto net en la barra&nbsp;
+de la derecha tenemos diferentes herramientas una
+
+00:01:37.980 --> 00:01:43.380
+vez que ya haya pasado el tiempo de los 7 gigas&nbsp;
+tendréis que iniciarlo le dije iniciar yo saldrá
+
+00:01:43.380 --> 00:01:48.660
+esta ventana aquí le dais a omitir por el momento&nbsp;
+y aquí he elegido el tema visual basic pero no es
+
+00:01:48.660 --> 00:01:53.760
+totalmente necesario seleccionarlo solo cambia un&nbsp;
+poquito el diseño de la pantalla y se abrirá esta
+
+00:01:53.760 --> 00:01:59.760
+ventana seleccionamos crear un nuevo proyecto y&nbsp;
+aplicación de consola que es la aplicación que
+
+00:01:59.760 --> 00:02:03.720
+nosotros vamos a utilizar la seleccionamos y&nbsp;
+le cambiamos el nombre y una vez que hayamos
+
+00:02:03.720 --> 00:02:08.760
+seleccionado el nombre le damos a siguiente&nbsp;
+y dejamos el framework como el punto net 6
+
+00:02:08.760 --> 00:02:13.380
+que tiene compatibilidad a largo plazo y una&nbsp;
+vez que ha terminado de crearlo podemos ver
+
+00:02:13.380 --> 00:02:20.160
+aquí lo primero que ejecuta que es un hola mundo&nbsp;
+arriba le damos a ejecutar el programa lo compila
+
+00:02:20.160 --> 00:02:25.740
+como se podía ver ahí abajo y ahora abajo pone&nbsp;
+listo una vez que ha terminado de compilarse y
+
+00:02:25.740 --> 00:02:30.480
+ejecutarse vemos que ahí sale el Hola mundo y la&nbsp;
+ruta en la que se estaba ejecutando el programa
+
+00:02:36.660 --> 00:02:42.240
+aquí os voy a explicar una de las tres&nbsp;
+aplicaciones que me han tocado la cual esta sería
+
+00:02:42.240 --> 00:02:48.900
+el desglose de monedas lo primero que podemos ver&nbsp;
+Es Cómo se ven las tres aplicaciones creadas a la
+
+00:02:48.900 --> 00:02:54.180
+derecha en este caso yo estoy dentro de desgloset&nbsp;
+punto visual basic Pero tenemos las otras opciones
+
+00:02:54.180 --> 00:02:59.700
+cada opción tiene que estar dentro de un proyecto&nbsp;
+diferente ya que no puedes tener dos mails dentro
+
+00:02:59.700 --> 00:03:04.980
+de un mismo proyecto funciona así porque esto está&nbsp;
+pensado para aplicaciones bastante grandes en las
+
+00:03:04.980 --> 00:03:11.460
+que tengas muchas aplicaciones con Vale ahora os&nbsp;
+explico esta Este programa en el cual el primero
+
+00:03:11.460 --> 00:03:16.740
+tenemos la declaración de variables como siempre&nbsp;
+en el que tenemos el dim para inicializarlo luego
+
+00:03:16.740 --> 00:03:22.200
+los nombres de las variables y un as y el tipo&nbsp;
+de variable que sería en este caso un decimal
+
+00:03:22.920 --> 00:03:28.260
+ya que vamos a utilizarlo para trabajar&nbsp;
+con decimales luego un control que es
+
+00:03:28.260 --> 00:03:35.940
+el equivalente al sistema out Ln luego en ese&nbsp;
+auxiliar lo que estamos metiendo es un parche
+
+00:03:35.940 --> 00:03:41.280
+que te lo convierte a decimal y un control&nbsp;
+punto redline Qué pasa el redline al igual
+
+00:03:41.280 --> 00:03:47.760
+que en Java solamente te lo lee como una String&nbsp;
+Por lo cual hay que convertirlo a decimal para
+
+00:03:47.760 --> 00:03:52.560
+poder hacer operaciones con él aquí como se puede&nbsp;
+ver no hace falta ni crear objetos con la clase
+
+00:03:52.560 --> 00:03:58.800
+escáner ni inicializar nada simplemente pones el&nbsp;
+control redline y ya te funcionaría luego Aquí
+
+00:03:58.800 --> 00:04:03.780
+tenemos las conversiones enteras en las cuales&nbsp;
+utilizamos int y la operación que vamos a hacer
+
+00:04:03.780 --> 00:04:09.420
+para que trunque ya que si no visual basic lo&nbsp;
+que hace de forma predeterminada es redondear
+
+00:04:09.420 --> 00:04:16.740
+los números Por lo cual podría dar error en&nbsp;
+números que tengan un valor muy elevado por
+
+00:04:16.740 --> 00:04:24.300
+ejemplo 1990 te podría dar cuatro billetes de 500&nbsp;
+ya que con los decimales quedaría por encima del
+
+00:04:24.300 --> 00:04:30.840
+0,5 ahora ese ausente lo estamos utilizando&nbsp;
+solamente para los billetes y las monedas sin
+
+00:04:30.840 --> 00:04:36.300
+decimales ya que es sentido que así si luego&nbsp;
+quisiésemos Modificar el programa podría ser
+
+00:04:36.300 --> 00:04:42.360
+más fácil aquí sacamos el módulo del billete&nbsp;
+justamente anterior que hemos calculado para
+
+00:04:42.360 --> 00:04:48.540
+poder guardarlo en oxx y seguir dividiendo y que&nbsp;
+te vaya dando los valores que estamos buscando
+
+00:04:48.540 --> 00:04:53.640
+aquí ya hemos acabado con toda la parte entera&nbsp;
+porque es todo lo mismo y llegamos a la parte
+
+00:04:53.640 --> 00:04:59.580
+decimal en la cual vuelve a ser lo mismo Solo&nbsp;
+que aquí tenemos una pequeña diferencia que
+
+00:04:59.580 --> 00:05:07.140
+es con los símbolos de dividir tenemos la barra&nbsp;
+que es lo que estamos utilizando aquí sirve para
+
+00:05:07.140 --> 00:05:14.100
+operador de números con decimales pero aparte de&nbsp;
+la barra normal También tenemos la contrabarra la
+
+00:05:14.100 --> 00:05:20.820
+cual a contrario que esta en vez de para números&nbsp;
+con decimales se utilizaría para el log que es
+
+00:05:21.360 --> 00:05:27.000
+elemento predefinido en Este lenguaje aquí todo&nbsp;
+está hecho con barras normales que técnicamente
+
+00:05:27.000 --> 00:05:34.080
+se utilizan para valores con decimales ya que si&nbsp;
+no la división puede llegar a dar una excepción
+
+00:05:34.080 --> 00:05:39.300
+porque la división podría generar números&nbsp;
+decimales los cuales no están comprendidos
+
+00:05:39.300 --> 00:05:44.640
+dentro de la contrabarra Vale ahora vamos a&nbsp;
+ver la ejecución del programa de desgloset
+
+00:05:44.640 --> 00:05:52.440
+y como podemos ver arriba tenemos la ejecución&nbsp;
+normal o la ejecución sin depuración yo suelo
+
+00:05:52.440 --> 00:05:56.880
+ejecutarlo con depuración la primera vez y luego&nbsp;
+sin depuración ya que funciona bastante más rápido
+
+00:05:57.900 --> 00:06:04.380
+aquí hay que esperar un poquito a que termine de&nbsp;
+compilarlo bien y de ejecutarlo todo y una vez que
+
+00:06:04.380 --> 00:06:10.860
+lo termine de hacer mostrará texto cómo se puede&nbsp;
+ver aquí yo aquí meto una cantidad de dinero en la
+
+00:06:10.860 --> 00:06:24.120
+que x y como se puede ver aquí lo da bien tres&nbsp;
+billetes de 500 1.500 1.550 y 1570 1574 con 79
+
+00:06:25.500 --> 00:06:28.620
+vale como se puede ver el programa funciona bien
+
+00:06:34.140 --> 00:06:40.080
+ahora tenemos aquí el programa de la calculadora&nbsp;
+de polinomios en el cual tenemos el módulo del
+
+00:06:40.080 --> 00:06:46.440
+polinomio que es la parte principal El Class&nbsp;
+que ponemos nosotros y el submain que es el
+
+00:06:46.440 --> 00:06:52.320
+Main justo después de esto tenemos la declaración&nbsp;
+de variables y la petición de datos creada con la
+
+00:06:52.320 --> 00:06:57.300
+sintaxis de la que os he hablado anteriormente&nbsp;
+Y la petición de datos también con la sintaxis
+
+00:06:57.300 --> 00:07:02.940
+de la que se ha hablado anteriormente aquí lo que&nbsp;
+hacemos Es meter el cálculo de la raíz dentro de
+
+00:07:02.940 --> 00:07:09.480
+la variable raíz para así hacer la operación más&nbsp;
+sencilla y más fácil de comprender aquí tenemos
+
+00:07:09.480 --> 00:07:14.220
+el If que es una instrucción bastante diferente&nbsp;
+a como la vemos en Java en la cual tenemos que
+
+00:07:14.220 --> 00:07:20.820
+poner el If luego la comprobación que queremos&nbsp;
+hacer y un den para que ejecute lo siguiente
+
+00:07:22.020 --> 00:07:29.340
+luego para acabarlo tenemos que poner un endid&nbsp;
+Ya que en este lenguaje no tenemos corchetes
+
+00:07:30.600 --> 00:07:37.980
+y el If acaba donde marca el ending es como&nbsp;
+si pusiésemos unos corchetes ahí tenemos un
+
+00:07:37.980 --> 00:07:45.420
+retén que funciona igual que funcionaría&nbsp;
+en Java y aquí tenemos ya los cálculos
+
+00:07:46.740 --> 00:07:57.060
+hacemos el primer cálculo el más punto sqrt&nbsp;
+funciona aquí al igual que en Java y aquí cogemos
+
+00:07:57.060 --> 00:08:03.300
+y escribimos el resultado de la primera raíz luego&nbsp;
+lo volvemos a calcular con el menos en lugar de
+
+00:08:03.300 --> 00:08:09.960
+con el más y mostramos el cálculo ahorrándonos&nbsp;
+una variable que no es muy significativo pero
+
+00:08:11.580 --> 00:08:17.520
+y aquí como Marcos se puede ver que el más punto&nbsp;
+sqrt funciona al igual que funcionaría en Java
+
+00:08:17.520 --> 00:08:23.100
+ahora vamos a hablar sobre la ejecución de&nbsp;
+los polinomios aquí una cosa importante es
+
+00:08:23.100 --> 00:08:28.320
+que para poder ejecutarlos hay que hacer clic&nbsp;
+derecho sobre el nombre del proyecto y pulsar
+
+00:08:28.320 --> 00:08:32.760
+en el botón de establecer como proyecto de&nbsp;
+inicio tal y como se puede ver en las imágenes
+
+00:08:32.760 --> 00:08:38.100
+una vez dado se puede ver que las letras se&nbsp;
+quedan en negrita Y ya y le volvemos a dar
+
+00:08:38.100 --> 00:08:43.020
+a ejecutar el programa tal y como le hemos dado&nbsp;
+anteriormente aquí ya se ha ejecutado Por lo cual
+
+00:08:43.020 --> 00:08:49.380
+introducimos el valor de a el valor de b y el&nbsp;
+valor de c y nos da ambos resultados de la raíz
+
+00:08:55.200 --> 00:09:00.660
+ahora vamos a hablar del programa más complejo&nbsp;
+de los que me ha tocado que es la Ruleta rusa
+
+00:09:00.660 --> 00:09:06.360
+en este caso Yo la he hecho con bucles y aquí&nbsp;
+lo que podemos ver Es la primera instrucción
+
+00:09:06.360 --> 00:09:13.320
+randomizzi es una ejecución que es necesaria&nbsp;
+para números aleatorios en Este lenguaje ya que
+
+00:09:13.320 --> 00:09:17.340
+inicia el generador de números aleatorios que&nbsp;
+funciona basado en el temporizador del sistema
+
+00:09:17.340 --> 00:09:24.120
+en caso de no activarse siempre generaría los&nbsp;
+mismos números aquí podemos ver las distintas
+
+00:09:24.120 --> 00:09:31.860
+variables que he necesitado para este programa en&nbsp;
+este caso serían tres y aleatorio funciona para
+
+00:09:31.860 --> 00:09:37.860
+guardar el número aleatorio que hemos generado&nbsp;
+dinero para el dinero del jugador y juega para
+
+00:09:37.860 --> 00:09:42.360
+saber si quiere jugar o no el dinero Aquí le&nbsp;
+hemos introducido el valor 1000 que es el dinero
+
+00:09:43.500 --> 00:09:50.640
+y aquí le preguntamos al jugador si quiere jugar&nbsp;
+a la Ruleta rusa Luego leemos si quiere jugar o
+
+00:09:50.640 --> 00:09:56.520
+no y generamos el número aleatorio aquí si el&nbsp;
+jugador quiere jugar ejecutaríamos todas estas
+
+00:09:56.520 --> 00:10:05.760
+instrucciones y en caso contrario ejecutaríamos&nbsp;
+estas y el jugador moriría al instante Vale ahora
+
+00:10:05.760 --> 00:10:11.580
+como podemos ver el Ford es una instrucción&nbsp;
+que también cambia bastante al igual que el
+
+00:10:13.320 --> 00:10:19.740
+Y en este en este Ford lo que tienes que poner es&nbsp;
+por la variable que quieres utilizar como contador
+
+00:10:19.740 --> 00:10:26.400
+y el tipo de variable que sería en este caso es&nbsp;
+internet como un entero luego igual y el número
+
+00:10:26.400 --> 00:10:33.000
+de vueltas que queremos en este caso es 1 a 6 Pero&nbsp;
+puede ser 1 a 10 pero al 100 o 0 a mil millones Si
+
+00:10:33.000 --> 00:10:40.200
+queremos para acabar el Ford utilizamos un next&nbsp;
+que sería como he dicho antes como los corchetes
+
+00:10:41.220 --> 00:10:48.000
+aquí tenemos el primer y en el cual si y es&nbsp;
+igual al número aleatorio generado tú morirías
+
+00:10:48.960 --> 00:10:55.500
+hay un slip de un segundo para meterle un&nbsp;
+poco de tensión y un mensaje de que has
+
+00:10:55.500 --> 00:11:03.000
+muerto y saldríamos del programa luego Aquí te&nbsp;
+preguntan si has sobrevivido te preguntaríamos
+
+00:11:03.000 --> 00:11:09.720
+si quieres seguir jugando y te diríamos cuando&nbsp;
+llevas ganado en caso de que sí quieras ahí
+
+00:11:09.720 --> 00:11:17.820
+leemos si quieres jugar o no y en caso de que&nbsp;
+sí quieras jugar lo que haríamos sería duplicar
+
+00:11:17.820 --> 00:11:23.580
+el dinero multiplicarlo por dos y hacer un&nbsp;
+continuo Ford que lo que hace es Volver al
+
+00:11:23.580 --> 00:11:29.100
+Foro es parecido al de Java pero aquí hay que&nbsp;
+poner la instrucción a la cual quieres volver
+
+00:11:30.180 --> 00:11:34.920
+en caso contrario si no quieres pues ya te&nbsp;
+diríamos que ha sobrevivido y has ganado
+
+00:11:34.920 --> 00:11:43.260
+y haríamos un reto saliendo directamente del&nbsp;
+programa para no causar ningún tipo de problemas y
+
+00:11:43.260 --> 00:11:51.060
+ya está este sería el fin de nuestro programa vale&nbsp;
+Aquí vamos a ver la ejecución de La ruleta rusa le
+
+00:11:51.060 --> 00:11:57.240
+vamos a dar a ejecutar a quitar también es porque&nbsp;
+ya la había ejecutado antes y La ruleta rusa te
+
+00:11:57.240 --> 00:12:02.420
+pregunta si quieres jugar le hemos dado que sí&nbsp;
+pero hemos muerto Igualmente en la primera ronda
+
+00:12:02.420 --> 00:12:09.960
+[Música] Por lo cual Vamos a darle otra&nbsp;
+vez ya hemos visto el mensaje de muerte
+
+00:12:12.000 --> 00:12:17.700
+ahora que quieres jugar Sí vale ahora&nbsp;
+te dice que llevas una 2.000 2.000
+
+00:12:17.700 --> 00:12:21.480
+Y si te quieres retirar aquí a&nbsp;
+sobrevivido y has ganado 2.000
+
+00:12:22.440 --> 00:12:27.660
+Por lo cual podemos ver que el programa&nbsp;
+funciona correctamente y hace lo que se le pedía
+
+00:12:33.780 --> 00:12:40.560
+vale Y como ya hemos visto en el vídeo&nbsp;
+es un lenguaje de programación parecido
+
+00:12:40.560 --> 00:12:45.480
+a Java en bastantes aspectos pero a la vez&nbsp;
+muy diferente en otros Como por ejemplo el
+
+00:12:45.480 --> 00:12:53.520
+tener dos formas diferentes de dividir pero en&nbsp;
+mi opinión es un lenguaje muy bueno y bastante
+
+00:12:53.520 --> 00:12:58.620
+bonito de utilizar y bueno con esto ya&nbsp;
+quería acabar el vídeo Muchas gracias
+

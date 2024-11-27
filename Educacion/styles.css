@@ -1,0 +1,210 @@
+:root {
+    /*Paleta principal*/
+    --color1: #24abf2;
+    --color2: #0084d0;
+    --color3: #0075b6;
+    --color4: #371ae5;
+    --color5: #4e2cec;
+    --color6: #663ef2;
+    --color7: #7e4ff9;
+    --color8: #9661ff;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    /*border: #333 solid 2px;*/
+  }
+  body {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  
+  /* Encabezado */
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    text-align: center;
+    background-color: var(--color7);
+    padding: 20px;
+    color: white;
+    text-transform: uppercase;
+  }
+  header h1 {
+    width: 70%;
+    margin-left: 5%;
+  }
+  header div{
+    margin: 0 20px;
+  }
+  .sombra{
+    text-shadow:
+    1px 1px 2px black,
+    0 0 1em var(--color4),
+    0 0 0.5em var(--color4);
+  color: var(--color1);
+  font:
+    2.em Georgia,
+    "Bitstream Charter",
+    "URW Bookman L",
+    "Century Schoolbook L",
+    serif;
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 1.8em;
+    color: var(--color3);
+    margin-bottom: 10px;
+  }
+  
+  article{
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  article div button{
+    width: 20%;
+    color: black;
+    background-color: var(--color1);
+    border-radius: 5px;
+    border: solid var(--color3) 2px;
+    padding: 5px;
+  }
+
+  article div button img{
+    width: 15px;
+  }
+  
+  button:hover{
+    background-color: var(--color6);
+  }
+
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 100%;
+    padding: 20px;
+  }
+
+  .content {
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0, 128, 128, 0.8); /* Fondo semitransparente */
+    color: #f1f1f1;
+    padding: 40px;
+    max-width: 100%;
+    }
+
+  div a{
+    width: 70%;
+  }
+  div.imagen {
+    margin:50px 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+  }
+  
+  div.imagen figure {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; 
+    text-align: center;
+  }
+  div.imagen figure img {
+    width: 95%; 
+    height: auto;
+    transition: all 1s ease;
+    box-shadow: 4px 4px 10px black;
+  }
+  div.imagen figure img:hover {
+    width: 100%; 
+    height: auto;
+    filter:brightness(1.3);
+  }
+  section {
+    flex: auto;
+    min-width: 300px;
+    max-width: 45%;
+    background-color: var(--color8);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    box-shadow: 2px 2px 6px var(--color5);
+  
+  }
+  
+  .audio {
+    visibility: hidden;
+    padding: 0px;
+  }
+  video,
+  iframe {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    border-radius: 5px;
+  }
+
+
+  /*Pie de pagina*/
+  footer {
+    width: 100%;
+    float: inline-start;
+    display: flex;
+    background-color: var(--color3);
+    color: #ffffff;
+    padding: 20px;
+    justify-content: space-around;
+  }
+  footer div {
+    text-align: center;
+  }
+  
+  @media (max-width: 768px) {
+    main {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    section {
+      max-width: 100%;
+    }
+    h1 {
+      font-size: 2em;
+    }
+  
+    h2 {
+      font-size: 1.5em;
+    }
+  
+    
+    footer {
+      font-size: 0.9em;
+    }
+    div.imagen{
+      display: block;
+    }
+  
+    div.imagen figure a{
+      width: 50%;
+      margin: 20px;
+    }
+  
+  }
+  .logo {
+    width: 15%;
+    max-width: 100px;
+  }

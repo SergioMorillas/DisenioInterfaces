@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamiento Absoluto</title>
+    <style>
+        .contenedor {
+            position: relative; /* Para que los elementos absolutos sean relativos a este contenedor */
+            width: 400px;
+            height: 200px;
+            border: 1px solid #333;
+            background-color: #f0f0f0;
+        }
+        .absolute-div {
+            position: absolute;
+            border: 1px solid #000;
+            background-color: #ff6347;
+            padding: 10px;
+        }
+        .top-left {
+            top: 10px;
+            left: 10px;
+        }
+        .top-right {
+            top: 10px;
+            right: 10px;
+        }
+        .bottom-left {
+            bottom: 10px;
+            left: 10px;
+        }
+        .bottom-right {
+            bottom: 10px;
+            right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="absolute-div top-left">Arriba Izquierda</div>
+        <div class="absolute-div top-right">Arriba Derecha</div>
+        <div class="absolute-div bottom-left">Abajo Izquierda</div>
+        <div class="absolute-div bottom-right">Abajo Derecha</div>
+    </div>
+</body>
+</html>

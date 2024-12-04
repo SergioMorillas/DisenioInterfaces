@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    gap: 2vh; 
+}
+
+.fila {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1vw;
+    background: linear-gradient(135deg, #2a7f3e, #1e5631); /* Gradiente para simular textura */
+    padding: 10px;
+    border: 5px solid #1e5631;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.carta {
+    position: relative;
+    width: 245px;
+    height: 342px;
+    margin: 1vw;
+    overflow: hidden;
+    flex-wrap: 3;
+    }
+    
+.valor,
+.reverso {
+    position: absolute;
+    width: 245px;
+    height: 342px;
+    background-position: center;
+    padding: 3vh;
+    background-image: url("cartasPokemon/r1-1.jpg");
+    background-size:  100% 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    border-radius: 15px;
+    border: outset white 3px;
+}
+
+
+.c1.valor { background-image: url("cartasPokemon/d1.png"); }
+.c2.valor { background-image: url("cartasPokemon/d2.png"); }
+.c3.valor { background-image: url("cartasPokemon/d3.png"); }
+.c4.valor { background-image: url("cartasPokemon/d3.png"); }
+.c5.valor { background-image: url("cartasPokemon/d2.png"); }
+.c6.valor { background-image: url("cartasPokemon/d1.png"); }
+
+.valor{ 
+    z-index: 0;
+    opacity: 0;
+    transform: rotateY(-180deg);
+    /* transition: transform 0.3s ease 0.3s,
+    z-index 0.3s ease 0.3s; */
+    transition: all 0.3s ease;
+}
+.carta:hover .valor{
+    /* z-index: 1; */
+    /* transform: rotateY(0); */
+}
+
+.reverso{
+    z-index: 1;
+    transition: all 0.3s ease;
+    opacity: 0.3;
+
+        /* transform: rotateY(0); */
+}
+.carta:hover .reverso{
+    opacity: 1;
+    /* z-index: 0; */
+    /* transform: rotateY(180deg); */
+}
+
+/*-----*/
+.girada .valor{
+    opacity: 1;
+    z-index: 1;
+    transform: rotateY(0);
+}
+.girada .reverso{
+    transform: rotateY(180deg);
+    z-index: 0;
+}

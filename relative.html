@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamiento Relativo</title>
+    <style>
+        .contenedor {
+            border: 1px solid #333;
+            width: 100%;
+            height: 200px;
+            background-color: #e0e0e0;
+        }
+        .relative-div {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            margin: 20px;
+            border: 1px solid #000;
+            background-color: #ffa07a;
+        }
+        .moved {
+            top: 50px; /* Mueve 50px hacia abajo */
+            left: 50px; /* Mueve 50px a la derecha */
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="relative-div">Elemento Normal</div>
+        <div class="relative-div moved">Elemento Movido</div>
+    </div>
+</body>
+</html>

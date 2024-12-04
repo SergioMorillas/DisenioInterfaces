@@ -1,0 +1,81 @@
+ * {
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+     list-style: none;
+ }
+
+ .linea {
+     display: flex;
+ }
+
+ .contenido {
+     width: 46%;
+     height: 25vh;
+     margin: 4vw;
+     border: 2px solid red;
+     transition: transform 0.75s linear 0.15s;
+     background-size: cover;
+     text-align: center;
+ }
+
+ .contenido p {
+    margin: 10vh 0;
+    font-size: 2rem;
+    font-weight: 700;
+ }
+
+ #arribaIzquierda {
+     background-image: url("imgs/img1.jpg");
+     background-size: cover;
+     transform-origin:top left;
+ }
+
+ #arribaIzquierda:hover {
+     transform: scale(115%);
+ }
+
+ #arribaDerecha {
+     background-image: url("imgs/img1.jpg");
+     transform-origin: top right;
+ }
+
+ #arribaDerecha:hover {
+     transform: scale(115%);
+ }
+
+ #centroIzquierda {
+     background-image: url("imgs/img1.jpg");
+     transform-origin: center left;
+ }
+
+ #centroIzquierda:hover {
+     transform: scale(115%);
+ }
+
+ #centroDerecha {
+     background-image: url("imgs/img1.jpg");
+     transform-origin: center right;
+ }
+
+ #centroDerecha:hover {
+     transform: scale(115%);
+ }
+
+ #abajoIzquierda {
+     background-image: url("imgs/img1.jpg");
+     transform-origin: bottom left;
+ }
+
+ #abajoIzquierda:hover {
+     transform: scale(115%);
+ }
+
+ #abajoDerecha {
+     background-image: url("imgs/img1.jpg");
+     transform-origin: bottom right;
+ }
+
+ #abajoDerecha:hover {
+    transform: scale(115%);
+}

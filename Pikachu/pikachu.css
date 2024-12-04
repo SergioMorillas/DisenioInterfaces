@@ -1,0 +1,46 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+.contenedor {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    border: red 1px solid;
+    transition: translate 0.5s ease-out 50ms;
+}
+
+.p1,
+.p2{
+    transition: opacity 0.5s ease-out 50ms;
+    transition: transform 0.75s linear 0.15s;
+
+}
+
+.p1 {
+    z-index: 1;
+    position: absolute;
+    top: 85px;
+    left: 0px;
+    transform: translateX(0);
+}
+
+.p2 {
+    position: absolute;
+    top: 0px;
+    left:0px;
+    /* transform:translateX(100%) ; */
+    transform: translateX(0);
+}
+
+.p1:hover{
+    transform:rotateZ(90deg);
+    transform-origin: 350px 220px ;
+}
+
+.p2:hover{
+    transform: translateX(0);
+}

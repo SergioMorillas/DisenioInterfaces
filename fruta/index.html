@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="ficha">
+      <div class="imagen">
+        <img src="img/cerezas.png" alt="" />
+      </div>
+      <div class="titulo">
+        <h1>Cerezas Cerezas</h1>
+      </div>
+      <div class="datos">
+        <div class="tam">
+            <h1 class="abajo">Tamaño:</h1>
+            <span class="tamano" onclick="marcar(this)" >Pequeño<br>(1kg)</span>
+            <span class="tamano" onclick="marcar(this)" >Medio<br>(1.5kg)</span>
+            <span class="tamano" onclick="marcar(this)" >Grande<br>(2kg)</span>
+        </div>
+        <div class="unid">
+            <h1 class="abajo">Unidades: </h1>
+            <span id="resta"class="unidades" onclick="calcula('resta')"></span>
+            <input id="numero" type="number" min=1 value="1" oninput="this.value = this.value.replace(/[^0-9]/g, '');">
+            <span id="suma" class="unidades" onclick="calcula('suma')"></span>
+        </div>
+        <div class="precio">
+            <h1 class="abajo">Precio:</h1>
+            <span  id="precio" class="precio">0</span>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

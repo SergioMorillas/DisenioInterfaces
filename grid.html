@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamiento con Grid</title>
+    <style>
+        .contenedor {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* Tres columnas de igual tamaño */
+            gap: 10px;
+            border: 1px solid #333;
+        }
+        .grid-div {
+            border: 1px solid #000;
+            background-color: #add8e6;
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="grid-div">Elemento 1</div>
+        <div class="grid-div">Elemento 2</div>
+        <div class="grid-div">Elemento 3</div>
+        <div class="grid-div">Elemento 4</div>
+        <div class="grid-div">Elemento 5</div>
+        <div class="grid-div">Elemento 6</div>
+    </div>
+</body>
+</html>

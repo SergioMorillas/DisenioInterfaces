@@ -1,0 +1,70 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+section{
+    float: left;
+    width: 45%;
+    margin: 2%;
+}
+
+
+img {
+    width: 100px;
+    height: auto;
+    margin: 20px;
+    display: block;
+}
+
+.caja-trans, .caja-rot2d, .caja-rot3d, .skew-rot2d{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(255, 203, 106);
+    border: blue 2px solid;
+    margin: 20px;
+    transition: transform 1s ease-in;
+}
+
+.img-trans, .img-rot2d, .img-rot3d, .skew-img {
+    transition: transform 1s ease-in;
+}
+
+.caja-trans:hover{
+    transform: translate(200px, 10px);
+
+}
+
+.img-trans:hover{
+    transform: translate(200px, 10px);
+
+}
+
+/*Rotate 2d*/
+.caja-rot2d:hover{
+    transform: rotate(45deg) scale(1.5); 
+}
+
+.img-rot2d:hover{
+    transform: rotate(45deg) scale(1.5); 
+}
+
+.caja-rot3d:hover{
+    transform: rotateX(60deg); /*Rotar 45 grados y escalar al 150%*/
+}
+
+.img-rot3d:hover{
+    transform:rotateY(60deg) rotateX(60deg)
+}
+
+/*skew 2d*/
+.skew-rot2d:hover{
+    transform: skew(50deg, 20deg);
+}
+
+.skew-img:hover{
+    transform: skew(50deg, 20deg);
+}
+

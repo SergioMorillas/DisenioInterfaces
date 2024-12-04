@@ -1,0 +1,180 @@
+*{
+    box-sizing: border-box;
+}
+
+.ficha {
+  position: relative;
+  overflow: hidden;
+  width: 300px;
+  height: 500px;
+  background-color: rgb(153, 14, 14);
+  border-radius: 5%;
+margin: 50px;
+}
+
+.ficha::before {
+  content: "";
+  position: absolute;
+  clip-path: circle(150px at 80% 20%);
+  background-color: rgb(255, 0, 0);
+  transition: all 1s ease;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.ficha:hover::before {
+  clip-path: circle(300px at 80% -20%);
+}
+.ficha::after {
+  margin-top: 150px;
+  position: absolute;
+  content: "oferta";
+  font-size: 130px;
+  z-index: 1;
+  font-style: italic;
+  color: rgba(0, 0, 0, 0.555);
+}
+img {
+  margin-top: 60px;
+  width: 300px;
+  position: absolute;
+  z-index: 2;
+  transition: all 1s ease;
+}
+.titulo {
+  position: absolute;
+  margin-top: 380px;
+  font-size: 20px;
+  font-weight: bolder;
+  color: white;
+  margin-left: 10px;
+  z-index: 2;
+  transition: all 1s ease;
+
+}
+.ficha:hover img {
+  transform: translateY(-20px);
+}
+.ficha:hover .titulo {
+  transform: translateY(-190px);
+}
+.ficha:hover .datos {
+  transform: translateY(300px);
+  transition: opacity .5s ease 1s;
+  opacity: 1;
+}
+.datos {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  transform: translateY(500px);
+  transition: transform 1s ease-in-out;
+  text-align: center;
+  align-items: center;
+  width: 100%;
+  opacity: 0;  
+}
+
+.tam,
+.unid,
+.precio {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 15px;
+  text-align: center;
+
+}
+
+
+h1.abajo{
+  color: antiquewhite;
+  font-size: large;
+  margin-right: 10px;
+
+}
+
+
+.tamano{
+    color: white;
+    padding: 5px ;
+    margin-left: 5px;
+    border-radius: 10%;
+    border:  solid 2px transparent;
+}
+.tamano:hover{
+
+    border: solid 2px rgb(255, 0, 0);
+    cursor:pointer;
+}
+.tamanoClicado{
+    background-color: rgb(255, 0, 0);
+    color: white;
+    padding: 5px ;
+    margin-left: 5px;
+    border-radius: 10%;
+    transition: all .2s;
+}
+input{
+    height: 30px;
+
+    width: 40px;
+    border-radius:25%;
+    border: none;
+    padding: 5px ;
+    margin: 0 15px 0 15px;
+    background-color: rgb(255, 0, 100);
+}
+
+span.precio{
+    height: 30px;
+    width: 60px;
+    border-radius:25%;
+    border: none;
+    padding: 5px ;
+    margin: 0 15px 0 15px;
+    background-color: rgb(255, 0, 100);
+}
+span.unidades{
+    cursor:pointer;
+    color: white;
+    border: 1px white solid;
+    border-radius: 50%;
+    width:  20px;
+    height:  20px;
+    transition: all .5s ;
+    font-weight: 700;
+}
+span.unidades:hover{
+    background-color:rgb(255, 0, 100) ;
+    border: 1px  solid rgb(255, 0, 100) ;
+    color: black;
+    font-weight: 900;
+}
+span.precio::after{
+    content:"€"
+}
+
+#resta::after{
+    content: "-";
+}
+#suma::after{
+    content: "+";
+
+}
+input:focus{
+outline: 0;
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance:textfield;
+}

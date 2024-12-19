@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Transformación</title>
+    <style>
+        #myDiv {
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+            margin: 50px auto;
+            transition: transform 0.5s ease;
+        }
+    </style>
+</head>
+<body>
+    <div id="myDiv"></div>
+    <button onclick="rotateDiv()">Rotar Div</button>
+
+    <script>
+        let grado = 0;
+
+        function rotateDiv() {
+            let vueltas  = Math.floor(Math.random()*5+1);
+            let grados = Math.floor(Math.random()*350 + (vueltas*360));
+            const div = document.getElementById('myDiv');
+            grado += grados;
+            console.log(grado)
+            div.style.setProperty('transform', `rotate(${grado}deg)`);
+        }
+    </script>
+</body>
+</html>

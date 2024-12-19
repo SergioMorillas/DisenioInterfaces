@@ -1,0 +1,207 @@
+:root {
+    --color-bottom: #c1272e;
+    --color-bt1-bt2: #d33c3c;
+    --color-cielo: rgb(17, 17, 154);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid red */
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.ejercicio {
+    width: 600px;
+    height: 600px;
+    margin: 2vh 2vw;
+}
+
+.enunciado {
+    width: 900px;
+    height: auto;
+    margin: 2vh 2vw;
+    line-height: 1.5;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.enunciado h1, .enunciado h2 {
+    padding: 1rem 0 0.3rem 1rem;
+}
+
+.enunciado p {
+    font-size: 0.8rem;
+}
+
+
+.ejercicio {
+    position: relative;
+}
+
+.ejercicio > * {
+    position: relative;
+}
+
+.contenedor {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    margin: 20px 20px;
+    background-color: var(--color-cielo);
+}
+
+.bottom{
+    background-color: var(--color-bottom);
+    height: 70px; 
+    width: 350px;
+    bottom: 80px;
+    left: 95px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fafafa;
+    z-index: 3;
+}
+
+.bt1,.bt2{
+    background-color: var(--color-bt1-bt2);
+    height: 20px;
+    width: 370px;
+    position: absolute;
+    border-radius: 10px; 
+}
+.bt1 {
+    top: -10px;
+    left: -10px;
+}
+.bt2 {
+    bottom: -10px;
+    left: -10px;
+}
+
+
+.contenedor > * {
+    position: absolute;
+}
+
+.casa {
+    width: 40%;
+    height: 35%;
+    top: 52%;
+    left: 40%;
+    background-image: url('media/imgs/casa.png');
+    background-size: cover;
+    position: relative;
+    z-index: 2;
+}
+
+.casa > * {
+    position: absolute;
+}
+
+.humo {
+    width: 90%;
+    left: 33%;
+    top: -62%;
+}
+
+.puerta {
+    width: 16%;
+    height: auto;
+    bottom: 0%;
+    left: 41%;
+}
+
+.piruleta {
+    width: 11%;
+    bottom: 0%;
+    left: 44%;
+}
+
+.copos {
+    width: 1000px;
+    height: 500px;
+    top: -500px;
+    left: -1000px;
+    /* border: 1px solid red */
+}
+
+.regalo {
+    width: 10%;
+    height: auto;
+    left: 20%;
+    top: 18%;
+}
+
+.santa {
+    width: 50%;
+    height: auto;
+    top: 30%;
+    right: -30%;
+}
+
+.contenedor{
+    overflow: hidden; 
+}
+.regalo{
+    opacity: 0;
+
+}
+
+.santa:hover{
+    transform: translate(-3000px, -1000px);
+    transition: linear 35s;
+}
+.santa:hover ~ .regalo{
+    opacity: 1;
+    transition:opacity linear 0.5s 4s, transform linear 2s 4s;
+    transform: translateY(285px) rotateZ(360deg);
+}
+.casa>.humo{
+    opacity:0;
+    transform: scale(0);
+    transition: all ease 1s ;
+}
+.casa:hover>.humo{
+    opacity:1;
+    transform: scale(1);
+}
+.casa>.puerta{
+    transform-origin: center left;
+    z-index:1;
+    transition: transform ease 1s 3s;
+}
+.casa>.puerta:hover{
+    transition: transform ease 1s ;
+    transform: rotateY(70deg);
+}
+.casa>.puerta ~ .piruleta{
+    transition: all 3s ;
+    transform-style: unset;
+}
+.casa>.puerta:hover ~ .piruleta{
+    transition: all 4s 1s;
+    transform: rotateZ(-370deg)  translateY(-205px)  scale(3);
+}
+.bottom{
+    color: var(--color-bottom);
+    transition: color 2s;
+}
+.bottom:hover{
+    color: white;
+    cursor: pointer;
+}
+.copos{
+    z-index: 0;
+}
+.nieve{
+    transition: transform ease 8s, opacity ease-in 2s 8s;
+    transform: translate(1000px, 500px);  /*Translate del tamaño completo de los copos, por si acaso*/
+    opacity: 0;
+}

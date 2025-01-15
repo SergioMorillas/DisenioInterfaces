@@ -33,6 +33,7 @@ body {
     width: 100%;
     height: 100%;
     z-index: 20;
+    cursor: default;
 }
 
 .section.is-expanded:nth-child(1) {

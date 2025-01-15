@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Call to Action</title>
+    <style>
+      /* Estilo general */
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+      }
+      .general {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      /* Contenedor Parallax */
+      .parallax {
+        height: 100vh;
+        width: 50vw;
+        background-attachment: fixed; /* Clave para el efecto Parallax */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        font-size: 2em;
+        text-align: center;
+        padding: 20px;
+        box-sizing: border-box;
+      }
+
+      .div1 {
+        background-image: url("vaca.jpg");
+      }
+      .div2 {
+        background-image: url("chuleta.jpg");
+      }
+      .div3 {
+        background-image: url("chuletaCocinada.jpg");
+      }
+    </style>
+  </head>
+  <body>
+    <div class="general">
+      <div class="parallax div1"></div>
+      <div class="parallax div2"></div>
+      <div class="parallax div3"></div>
+    </div>
+  </body>
+</html>

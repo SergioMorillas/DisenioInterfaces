@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Call to Action</title>
+  </head>
+  <body>
+    <style>
+      /* Estilo general */
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        font-family: Arial, sans-serif;
+      }
+      /* Contenedor Parallax */
+      .parallax {
+        background-image: url("parallax.png"); /* Reemplaza con tu imagen */
+        height: 100vh; /* Altura del viewport */
+        background-attachment: fixed; /* Clave para el efecto Parallax */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      /* Contenido estático */
+      .content {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f4f4f4;
+        text-align: center;
+      }
+    </style>
+    <div class="parallax"></div>
+    <div class="content">
+      <h1>Bienvenido al efecto Parallax</h1>
+      <p>Este es un ejemplo simple de implementación.</p>
+    </div>
+  </body>
+</html>

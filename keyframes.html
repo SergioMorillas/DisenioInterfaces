@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animación de Desplazamiento</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            width: 200px;
+            height: 200px;
+            overflow: hidden;
+            position: relative;
+        }
+        .block {
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            animation: move 9s infinite;
+        }
+        .block:nth-child(1) {
+            background-color: blue;
+            animation-delay: 0s;
+        }
+        .block:nth-child(2) {
+            background-color: orange;
+            animation-delay: 3s;
+        }
+        .block:nth-child(3) {
+            background-color: red;
+            animation-delay: 6s;
+        }
+        @keyframes move {
+            0%, 33.33% {
+                transform: translateX(0%);
+            }
+            33.33%, 66.66% {
+                transform: translateX(100%);
+            }
+            66.66%, 100% {
+                transform: translateX(200%);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+    </div>
+</body>
+</html>

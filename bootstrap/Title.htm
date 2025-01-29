@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    
+    
+  <link href="Title_files/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"><link rel="stylesheet" href="Title_files/style.css"></head>
+
+  <body>
+    <header></header>
+    <main>
+      <h1 class="display-1 text-center">Galeria de imagenes</h1>
+      <div class="container">
+        <div class="row">
+          <div class="col-6 col-sm-6 col-md-4 col-xl-2">
+            <figure id="educacion">
+              <img class="img-fluid" src="Title_files/Educacion.png" alt="">
+              <figcaption>educacion</figcaption>
+            </figure>
+          </div>
+          <div class="col-6 col-sm-6 col-md-4 col-xl-2">
+            <figure id="image">
+              <img class="img-fluid" src="Title_files/image.png" alt="">
+              <figcaption>image</figcaption>
+            </figure>
+          </div>
+          <div class="col-6 col-sm-6 col-md-4 col-xl-2">
+            <figure id="secciones">
+              <img class="img-fluid" src="Title_files/secciones.png" alt="">
+              <figcaption>secciones</figcaption>
+            </figure>
+          </div>
+          <div class="col-6 col-sm-6 col-md-4 col-xl-2">
+            <figure id="Halloween">
+              <img class="img-fluid" src="Title_files/Halloween.png" alt="">
+              <figcaption>Halloween</figcaption>
+            </figure>
+          </div>
+          <div class="col-6 col-sm-6 col-md-4 col-xl-2">
+            <figure id="Instagram">
+              <img class="img-fluid" src="Title_files/Instagram.png" alt="">
+              <figcaption>Instagram</figcaption>
+            </figure>
+          </div>
+          <div class="col-6 col-sm-6 col-md-4 col-xl-2">
+            <figure id="Waterpolo">
+              <img class="img-fluid" src="Title_files/Waterpolo.png" alt="">
+              <figcaption>Waterpolo</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+    <script src="Title_files/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+
+    <script src="Title_files/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+  <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>

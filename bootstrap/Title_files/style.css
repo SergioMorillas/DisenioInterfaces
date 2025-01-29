@@ -1,0 +1,33 @@
+figure {
+  position: relative;
+  overflow: hidden;
+}
+
+figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform 0.2s;
+}
+
+figure figcaption {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-size: xx-large;
+  background-color: rgba(0, 0, 0, 0.6);
+  text-align: center;
+  align-content: center;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+figure:hover figcaption {
+  opacity: 1;
+}
+
+figure:hover img {
+  transform: scale(1.2);
+}

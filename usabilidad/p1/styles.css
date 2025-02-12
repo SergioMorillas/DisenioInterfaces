@@ -1,0 +1,38 @@
+body {
+    background-color: #f0f0f0;
+    color: #101010;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px; 
+    margin: 0 auto;
+    line-height: 1.5; 
+}
+h1 {
+    font-size: 24px;
+    text-transform: capitalize;
+}
+h2 {
+    font-size: 20px;
+    text-transform: capitalize;
+}
+h3 {
+    font-size: 18px;
+    text-transform: capitalize;
+}
+h4 {
+    font-size: 16px; 
+    text-transform: capitalize;
+}
+p {
+    margin-bottom: 15px; 
+}
+.content-box {
+    background-color: #3a3939;
+    color: #ffffff;
+    padding: 20px; 
+    margin: 20px 0;
+    border-radius: 5px; 
+}
+a {
+    color: #0000ff;
+    text-decoration: underline; 
+}

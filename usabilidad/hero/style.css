@@ -1,0 +1,196 @@
+.hero-image,
+.hero-image * {
+  box-sizing: border-box;
+}
+.hero-image {
+  height: 400px;
+  position: relative;
+}
+.div-principal {
+  position: absolute;
+  inset: 0;
+}
+.base {
+  background: #211c33;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  bottom: 0%;
+  top: 0%;
+}
+.derecha {
+  width: 200px;
+  height: 400px;
+  position: static;
+}
+.abajo {
+  background: #2b818c;
+  width: 28.57%;
+  height: 100%;
+  position: absolute;
+  right: 0%;
+  left: 71.43%;
+  bottom: 0%;
+  top: 0%;
+}
+.aqu-hay-cosas-con-muchisimo-texto-y-bla-bla-bla {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Inter-Light", sans-serif;
+  font-size: 32px;
+  font-weight: 300;
+  position: absolute;
+  right: 2.86%;
+  left: 72.86%;
+  width: 24.29%;
+  bottom: 39.75%;
+  top: 7.5%;
+  height: 52.75%;
+}
+.izquierda {
+  width: 500px;
+  height: 400px;
+  position: static;
+}
+.arriba {
+  background: #ffc994;
+  width: 71.43%;
+  height: 100%;
+  position: absolute;
+  right: 28.57%;
+  left: 0%;
+  bottom: 0%;
+  top: 0%;
+}
+.main-izq {
+  width: 500px;
+  height: 347px;
+  position: static;
+}
+.nav {
+  width: 138px;
+  height: 25px;
+  position: static;
+}
+.btn-1 {
+  background: #ffffff;
+  border-radius: 100%;
+  width: 3.43%;
+  height: 6%;
+  position: absolute;
+  right: 56.43%;
+  left: 40.14%;
+  bottom: 91%;
+  top: 3%;
+}
+.btn-2 {
+  background: #ffffff;
+  border-radius: 100%;
+  width: 3.43%;
+  height: 6%;
+  position: absolute;
+  right: 51%;
+  left: 45.57%;
+  bottom: 91%;
+  top: 3%;
+}
+.btn-3 {
+  background: #ffffff;
+  border-radius: 100%;
+  width: 3.43%;
+  height: 6%;
+  position: absolute;
+  right: 45.57%;
+  left: 51%;
+  bottom: 91%;
+  top: 3%;
+}
+.btn-4 {
+  background: #ffffff;
+  border-radius: 100%;
+  width: 3.43%;
+  height: 6%;
+  position: absolute;
+  right: 40.14%;
+  left: 56.43%;
+  bottom: 90.75%;
+  top: 3.25%;
+}
+.nombre-arma {
+  color: #000000;
+  text-align: center;
+  font-family: "Inter-Black", sans-serif;
+  font-size: 48px;
+  font-weight: 900;
+  position: absolute;
+  right: 28.57%;
+  left: 0%;
+  width: 71.43%;
+  bottom: 66.75%;
+  top: 17.5%;
+  height: 15.75%;
+}
+.btn-comprar {
+  width: 197px;
+  height: 45px;
+  position: static;
+}
+.rectangle-1 {
+  background: #ff942b;
+  border-radius: 10px;
+  width: 28.14%;
+  height: 11.25%;
+  position: absolute;
+  right: 65.86%;
+  left: 6%;
+  bottom: 10.25%;
+  top: 78.5%;
+}
+.comprar {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Inter-Medium", sans-serif;
+  font-size: 36px;
+  font-weight: 500;
+  position: absolute;
+  right: 65.86%;
+  left: 6%;
+  width: 28.14%;
+  bottom: 10.25%;
+  top: 78.5%;
+  height: 11.25%;
+}
+.vector {
+  width: 2.88%;
+  height: 5.25%;
+  position: absolute;
+  right: 67.69%;
+  left: 29.43%;
+  bottom: 12.75%;
+  top: 82%;
+  overflow: visible;
+}
+.imagen {
+  border-radius: 20px;
+  width: 57.14%;
+  height: 24.35%;
+  position: absolute;
+  right: -23.6%;
+  left: 66.46%;
+  bottom: 20.2%;
+  top: 55.45%;
+  transform-origin: 0 0;
+  transform: rotate(20deg) scale(-1, 1);
+  object-fit: cover;
+}
+.explosion-fire-transparent-background-png-1 {
+  width: 142.86%;
+  height: 752px;
+  position: absolute;
+  right: 173.29%;
+  left: -216.14%;
+  top: -691px;
+  object-fit: cover;
+}

@@ -1,0 +1,241 @@
+.banner-section .banner-main-heading,.banner-section h1,.banner-section .banner-para,.banner-section .is-style-outline a{
+  font-family: 'Lato', sans-serif;
+}
+.banner-section img{
+  height: auto !important;
+  top: auto !important;
+  position: absolute;
+}
+.banner-section{
+  margin-bottom: 50px;
+}
+.banner-section .banner-content img{
+  width: auto;
+}
+.banner-section .wp-block-button.is-style-outline a,.banner-section .banner-shortcode .calc-range-slider-min-max span{
+  color: #fff !important;
+}
+.banner-section .banner-heading{
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 0rem;
+}
+.banner-section .wp-block-button .is-style-outline a{
+  padding: 15px 5px 15px 10px;
+}
+.banner-section .wp-block-button.is-style-outline a:hover,.about-section .about-btn a:hover{
+  background-color: #FF8800 !important;
+}
+.banner-section h1:hover,.about-section h1:hover{
+  color: #FF8800 !important;
+}
+.banner-section span.wp-block-cover__background.has-background-dim{
+  background-color : transparent !important;
+}
+.banner-section .banner-content{
+  top: 45%;
+  transform: translateY(-50%);
+  bottom: auto;
+  text-align: left;
+  z-index: 99;
+  left: 15%;
+  right: 50%;
+  position: absolute;
+}
+.banner-section .banner-shortcode p{
+  right: 25%;
+  position: absolute;
+  top: 25%;
+  border: 2px solid #fff;
+  padding: 10px 20px;
+}
+.banner-section .banner-shortcode .calculator-settings{
+  top: auto;
+  transform: translateY(-50%);
+  bottom: -17%;
+  position: absolute;
+  margin: 0 !important;
+}
+.banner-section .banner-shortcode .calc-container .calc-list .calc-fields-container{
+  row-gap: 10px !important;
+}
+.banner-section .calc-subtotal-wrapper{
+  margin: -32px auto !important;
+}
+.about-section .about-small-heading{
+  font-weight: 600;
+}
+.about-section .about-main-heading{
+  font-weight: 700;
+  margin-bottom: 0rem;
+}
+.about-section .about-certificate .wp-block-columns,.about-section .about-right{
+  gap: 0em;
+}
+.about-content-section .right-section {
+  gap: 0em !important;
+}
+.about-content-section .right-section img{
+  width: 15px;
+}
+.about-content-section .right-section .wp-block-column {
+  margin-right: -50px;
+}
+.about-section .about-right img{
+  font-weight: 900;
+/*  width: 18px;*/
+}
+.about-section .about-img-section img{
+  width: 100%;
+}
+.about-content-section  .about-btn  .wp-block-button.is-style-outline a{
+  color: #fff !important;
+  padding: 12px 18px;
+}
+@media screen and (min-width: 1001px) and (max-width: 1024px){
+  .banner-section .banner-shortcode .calculator-settings{
+    top: 35%;
+    left: 33%;
+    background: transparent;
+  }
+  .banner-section .calc-subtotal-wrapper{
+    margin: 15px auto !important;
+  }
+  .banner-section .banner-shortcode .calc-container .calc-list .calc-fields-container{
+    row-gap: 0px !important;
+  }
+  .banner-section .banner-content{
+    top: 45%;
+    left: 7%;
+  }
+  /*.about-section .about-certificate{
+    gap: 0em;
+  }*/
+  .about-section .about-certificate .wp-block-columns{
+    gap: 0.5em;
+  }
+  .about-section .about-img-section .wp-block-image{
+    margin-top: 50px !important;
+  }
+  .banner-section .wp-block-cover__image-background{
+    top: 0 !important;
+    height: 100% !important;
+  }
+  .banner-section {
+    margin-bottom: 0px;
+  }
+  .about-content-section .right-section .wp-block-column {
+    margin-right: -40px;
+  }
+}  
+@media screen and (min-width: 426px) and (max-width: 768px){
+  .about-section,.about-section .about-certificate,.about-section .about-certificate .wp-block-columns,.about-section .right-section{
+    flex-wrap: nowrap !important;
+  }
+  .about-section .about-img-section .wp-block-image{
+    margin-top: 50% !important;
+  }
+  .about-section:not(.is-not-stacked-on-mobile)>.about-img-section{
+    flex-basis: 40% !important;
+  }
+  .about-section:not(.is-not-stacked-on-mobile)>.about-content-section{
+    flex-basis: 60% !important;
+  }
+  .right-section:not(.is-not-stacked-on-mobile)>.right-img{
+    flex-basis: 10% !important;
+  }
+  .right-section:not(.is-not-stacked-on-mobile)>.right-text{
+    flex-basis: 90% !important;
+  }
+  .about-certificate:not(.is-not-stacked-on-mobile)>.about-certificate-img{
+    flex-basis: 15% !important;
+  }
+  .about-certificate:not(.is-not-stacked-on-mobile)>.about-certificate-text{
+    flex-basis: 85% !important;
+  }
+  .about-section .about-certificate,.certificate-section{
+    gap: 0.5em;    
+  }
+  .banner-section .banner-heading{
+    font-size: 35px !important;
+  }
+  .banner-section .banner-content{
+    top: 55%;
+    left: 5%;
+  }  
+  .banner-section {
+    margin-bottom: 0px;
+    min-height: 450px !important;
+  }
+  .banner-section .banner-shortcode .calculator-settings{
+    top: 46%;
+    left: 30%;
+    background: transparent;
+  }
+  .banner-section .banner-para{
+    display: none;
+  }
+  .banner-section .banner-shortcode .calc-container .calc-list .calc-list-inner{
+    width: 300px;
+    padding: 0px 14px !important;
+  }
+  .banner-section .banner-shortcode .calc-item textarea{
+    min-height: 28px;
+  }
+  .banner-section .banner-shortcode textarea#text_area_{
+    padding: 7px 0 0 0 !important;
+  }
+  .banner-section .calc-subtotal-wrapper{
+    margin: 5px auto !important;
+  }
+  .banner-section .banner-shortcode .calc-container .calc-list .calc-fields-container{
+    row-gap: 5px !important;
+  }
+  .banner-section .banner-main-heading{
+    margin-bottom: 0px;
+  }
+  .banner-section h1{
+    font-size: 40px !important;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 425px){
+    .about-section .about-certificate,.about-section .right-section {
+      flex-wrap: nowrap !important;
+      gap: 0.5em !important;
+    }
+    .about-certificate:not(.is-not-stacked-on-mobile)>.about-certificate-img{
+    flex-basis: 15% !important;
+  }
+  .about-certificate:not(.is-not-stacked-on-mobile)>.about-certificate-text{
+    flex-basis: 85% !important;
+  }
+  .right-section:not(.is-not-stacked-on-mobile)>.right-img{
+    flex-basis: 10% !important;
+  }
+  .right-section:not(.is-not-stacked-on-mobile)>.right-text{
+    flex-basis: 90% !important;
+  }
+  .about-section .about-certificate,.certificate-section {
+    gap: 0.5em;
+  }
+  .about-section{
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding: 0.5rem;
+  }
+  .banner-section .banner-main-heading, .banner-section h1, .banner-section figure, .banner-section .banner-para,
+  .banner-section .banner-shortcode{
+    display: none;
+  }
+  .banner-section{
+    min-height: 200px !important;
+  }
+  .banner-section .banner-content{
+    top: 55%;
+    left: 25%;
+    right: 25%;
+  }
+  .right-section{
+    padding: 0 2rem 0 0;
+  }
+}

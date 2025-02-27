@@ -1,0 +1,90 @@
+.banner-section .banner-main-heading,.banner-section h1,.banner-section .banner-para,.banner-section .is-style-outline a{
+  font-family: 'Lato', sans-serif;
+}
+.banner-section .banner-main-heading,.about-section .about-certificate,.about-section .certificate-section,.about-section .paragraph-section,
+.about-section .right-section{
+  margin: 0px;
+  padding: 0px;
+}
+.about-section .about-main-heading{
+  margin: 20px 0;
+}
+.about-section .paragraph-section{
+  margin-bottom: 20px;
+}
+.about-section .certificate-section{
+  margin: 20px 0;
+}
+.banner-section img{
+  height: auto !important;
+  top: auto !important;
+  position: absolute;
+}
+.banner-section span.wp-block-cover__background.has-background-dim{
+  background-color : transparent !important;
+}
+.banner-section{
+  margin-bottom: 50px;
+}
+.banner-section .banner-main-heading{
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 0rem;
+}
+.banner-section .wp-block-button:hover,.about-section .about-btn .wp-block-button__link:hover{
+  background-color: #FF8800;
+}
+.banner-section h1:hover{
+  color: #FF8800 !important;
+}
+.banner-section .banner-content{
+  top: 40%;
+  transform: translateY(-50%);
+  bottom: auto;
+  text-align: left;
+  z-index: 99;
+  left: 15%;
+  right: 50%;
+  position: absolute;
+}
+.banner-section .banner-shortcode {
+  right: 25%;
+  position: absolute;
+  top: auto;
+  bottom: 10%;
+}
+.banner-section .banner-para{
+  margin-bottom: 20px;
+}
+.about-section .about-small-heading{
+  font-weight: 600;
+}
+.about-section .about-main-heading{
+  font-weight: 700;
+}
+.about-section{
+  gap: 2em  !important;
+  max-width: 1024px;
+}
+.about-section .about-certificate-text p{
+  margin-top: 0px;
+}
+.about-section .about-right .right-img figure{
+  margin:1em 0 1em ;
+}
+.about-section .about-right img {
+    font-weight: 900;
+    width: 18px;
+}
+.about-section .about-right{
+  gap: 0em;
+}
+.about-section .about-btn .wp-block-button__link{
+  padding: 10px 18px;
+}
+.about-section .certificate-section{
+  gap: 2em;
+}
+.about-content-section .right-section img {
+    width: 15px;
+}
